@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.theme-light {
+  --primary: #f8f8f8;
+  --secondary: #e5e7eb;
+  --text-main: #555;
+  --text-secondary: #131313;
+  --accent: #009ffd;
+}
+
+.theme-dark {
+  --primary: #333;
+  --secondary: #4d4d4d;
+  --text-main: #e6e6e6;
+  --text-secondary: #b8b8b9;
+  --accent: #fc7753;
+}
+
+@layer base {
+  html {
+    background: #333;
+    font-family: "San Francisco", PingFangSC-Regular, "Microsoft JhengHei",
+      "Open Sans", sans-serif, "Heiti TC";
+  }
+
+  h1 {
+    @apply text-4xl;
+  }
+
+  .article>* {
+    @apply mb-2;
+  }
+
+  .article>p {
+    @apply mb-5;
+  }
+
+  .article>.gatsby-highlight {
+    @apply mb-5;
+  }
+
+  a:hover {
+    @apply opacity-75;
+  }
+}
+
+@layer components {
+  .link {
+    @apply block pr-2 pl-2 text-main-text;
+  }
+
+  .link-active {
+    @apply text-secondary-text;
+  }
+}

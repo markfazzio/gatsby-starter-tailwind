@@ -1,0 +1,58 @@
+{
+  "name": "gatsby-stater-tailwind",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Gatsby with native tailwindcss and typescript support. Building page for blog.",
+  "author": "Mark Fazzio",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop -p 8001",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "typecheck": "tsc --noEmit",
+    "info": "gatsby info"
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.7.18",
+    "@tailwindcss/line-clamp": "^0.4.4",
+    "gatsby": "^5.13.3",
+    "gatsby-plugin-disqus": "^1.2.6",
+    "gatsby-plugin-google-analytics": "^5.13.1",
+    "gatsby-plugin-image": "^3.13.1",
+    "gatsby-plugin-manifest": "^5.13.1",
+    "gatsby-plugin-react-helmet": "^6.13.1",
+    "gatsby-plugin-sharp": "^5.13.1",
+    "gatsby-plugin-sitemap": "^6.13.1",
+    "gatsby-remark-copy-linked-files": "^6.13.1",
+    "gatsby-remark-images": "^7.13.1",
+    "gatsby-remark-prismjs": "^7.13.1",
+    "gatsby-remark-reading-time": "^1.1.0",
+    "gatsby-remark-responsive-iframe": "^6.13.1",
+    "gatsby-remark-smartypants": "^6.13.1",
+    "gatsby-source-filesystem": "^5.13.1",
+    "gatsby-transformer-remark": "^6.13.1",
+    "gatsby-transformer-sharp": "^5.13.1",
+    "prism-themes": "^1.9.0",
+    "prismjs": "^1.29.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-feather": "^2.0.10",
+    "react-helmet": "^6.1.0",
+    "react-share": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.5",
+    "@types/react": "^18.2.74",
+    "@types/react-dom": "^18.2.24",
+    "@types/react-helmet": "^6.1.11",
+    "autoprefixer": "^10.4.19",
+    "gatsby-plugin-postcss": "^6.13.1",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3",
+    "typescript": "^5.4.4"
+  }
+}
