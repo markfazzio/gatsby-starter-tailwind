@@ -31,7 +31,7 @@ const config: GatsbyConfig = {
         short_name: "MarkFazzio",
         start_url: "/",
         background_color: "#ffffff",
-        icon: "src/images/favIcon.png",
+        icon: "src/images/favicon.png",
       },
     },
     {
@@ -49,20 +49,6 @@ const config: GatsbyConfig = {
       },
     },
     "gatsby-transformer-sharp",
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        path: `${__dirname}/content/blog`,
-        name: "blog",
-      },
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "images",
-        path: `${__dirname}/content/images`,
-      },
-    },
     {
       resolve: "gatsby-transformer-remark",
       options: {
@@ -89,12 +75,6 @@ const config: GatsbyConfig = {
       },
     },
     "gatsby-plugin-postcss",
-    {
-      resolve: `gatsby-plugin-disqus`,
-      options: {
-        shortname: `ianchuu`,
-      },
-    },
   ],
 };
 

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "gatsby";
 
-import HeaderSlide from "./HeaderSlide";
 import SwitchTheme from "./SwitchTheme";
 
 const Header: React.FC<{
@@ -56,32 +55,12 @@ const Header: React.FC<{
                 Home
               </Link>
             </li>
-            <li>
-              <Link
-                to={"/about"}
-                className={`link py-4 ${
-                  pathname === "/about" && `link-active`
-                }`}
-              >
-                About
-              </Link>
-            </li>
-            <li>
-              <Link to="https://www.facebook.com/chu1228" className="link py-4">
-                Facebook
-              </Link>
-            </li>
           </ul>
           <div className="flex items-center">
             <SwitchTheme />
           </div>
         </div>
       </div>
-      <HeaderSlide
-        pathname={pathname}
-        isOpen={isOpen}
-        onClose={() => setIsOpen(false)}
-      />
     </nav>
   );
 };

@@ -1,5 +1,4 @@
-import React, { useContext } from "react";
-import { ThemeContext, ThemeContextType } from "../context/ThemeContext";
+import React from "react";
 
 import { useStaticQuery, graphql } from "gatsby";
 
@@ -30,10 +29,7 @@ const Layout: React.FC<{
       <footer className="text-center py-2 text-sm">
         © {new Date().getFullYear()} &middot; Built with
         {` `}
-        <a href="https://www.gatsbyjs.com">Gatsby</a> &middot;{" "}
-        <a href="https://github.com/Ianpig/gatsby-tailwind-typescript-starter">
-          Mark Fazzio
-        </a>
+        <a href="https://www.gatsbyjs.com">Gatsby</a>
       </footer>
     </div>
   );
